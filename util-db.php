@@ -10,7 +10,7 @@ mysqli_real_connect($conn, "hw3-mis4013.mysql.database.azure.com", "kalebtking",
     // if ($conn->connect_error) {
     //   return false;
     // }
-    // return $conn;
+    return $conn;
 }
 ?>
 
