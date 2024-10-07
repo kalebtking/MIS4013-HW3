@@ -15,7 +15,10 @@ function selectInstructors()
         $conn->close();
         return $result;
     } catch (Exception $e) {
-        $conn->close();
+        if (isset($conn)) {
+            $conn->close();
+    }
+        // $conn->close();
         throw $e;
     }
 }
